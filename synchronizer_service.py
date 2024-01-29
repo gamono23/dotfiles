@@ -9,7 +9,6 @@ from datetime import datetime
 
 from inotify_simple import INotify, flags
 
-import commit_message_generation
 
 
 # Polling rate for file changes in seconds. Isn't as important, just make sure that it's not 0 if you use editors like neovim.
