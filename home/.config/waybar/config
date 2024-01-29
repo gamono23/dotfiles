@@ -1,0 +1,29 @@
+{
+    "layer": "top", // Waybar at top layer
+    "height": 24, // Waybar height (to be removed for auto height)
+    "spacing": 10, // Gaps between modules (4px)
+    "modules-left": ["hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["tray", "pulseaudio", "hyprland/language", "clock"],
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}
