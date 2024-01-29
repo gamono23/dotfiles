@@ -248,7 +248,7 @@ def git_commit(commit_message: str | None = None):
         print(f"Commit with message {commit_message}")
         return
 
-    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "add", "home"])
 
     if USE_OPENAI:
         commit_message = commit_message_generation.get_commit_message()
