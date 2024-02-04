@@ -40,7 +40,7 @@ window#waybar {
   color: white;
   background: rgba(0, 0, 0, 0.18);
   border-radius: 5px;
-  margin: 5px 10px 0px;
+  margin: 2px 10px 0px;
   padding-left: 3px;
   padding-right: 3px;
 }
